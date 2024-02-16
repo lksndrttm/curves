@@ -10,7 +10,7 @@ class Circle : public Curve
 private:
     double radius_;
 public:
-    Circle(double radius);
+    explicit Circle(double radius);
     std::vector<double> point(double t) const override;
     std::vector<double> derivative(double t) const override;
     double radius() const {return radius_;}
